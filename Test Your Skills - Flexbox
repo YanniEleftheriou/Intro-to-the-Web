@@ -1,0 +1,52 @@
+<!-- TASK ONE -->
+
+nav ul {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+
+<!-- TASK TWO -->
+ul {
+display: flex;
+flex-direction: row;
+height: 300px;
+}
+
+li {
+width: 250px;
+height: 280px;
+}
+
+<!-- TASK THREE -->
+
+
+.parent {
+display: flex;
+flex-direction: row;
+flex-wrap: none;
+justify-content: center;
+align-items: center;
+
+}
+
+.child {
+
+}
+
+
+<!-- TASK FOUR -->
+
+
+ul {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+}
+
+li {
+
+}
