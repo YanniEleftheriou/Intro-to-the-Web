@@ -1,0 +1,217 @@
+body {
+    background-color: white;
+    margin: 0;
+    padding:0;
+    display:grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: calc(100vw / 12);
+    grid-gap: 10px;
+}
+
+
+
+nav {
+
+
+    background: radial-gradient(circle, rgba(0,0,0,1) 13%, rgba(42,182,255,1) 26%, rgba(42,125,255,1) 37%, rgba(255,255,255,1) 51%, rgba(255,255,255,1) 70%, rgba(0,98,194,1) 94%);
+
+    grid-area: 1/1/3/13;
+
+   /* 
+   grid-area: grid-row-start / grid-column-start / grid-row-end / grid-column-end  
+
+   above is shorthand for:
+    grid-row-start: 1;  
+    grid-column-start: 1;
+    grid-row-end: 3;
+    grid-column-end: 13;
+   */
+
+   /*
+   Let's try using an svg file for the name instead of text.  This will allow us to scale more easily.  
+   */ 
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+nav > div {
+    width:50%;
+    /* container for svg file.  this sets the sizing of the name */
+}
+
+
+main {}
+
+
+img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position:top left;
+}
+
+.first {
+    grid-area: 12/2/19/7;
+    z-index:2;
+}
+
+.second {
+
+    grid-area: 3/1/14/13;
+    z-index:1; 
+}
+
+.third {
+    grid-area: 4/2/8/5;
+    z-index:2;
+}
+
+.fourth {
+
+    grid-area: 13/7/21/13;
+    z-index:1;
+}
+
+.fifth {}
+
+.sixth {}
+
+.seventh {}
+
+.eighth {}
+
+.ninth {
+
+    grid-area: 5/4/9/7;
+    z-index:3;
+}
+
+footer  {
+
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    img{
+        width: 100%;
+        height: 100%;
+    
+}
+    body {
+        display:grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+    grid-template-rows: 200px 450px 300px 300px 300px 300px 300px 300px;
+      background-color: white;
+      margin: 0;
+    padding:0;
+    }
+    
+    nav {
+        display:flex;
+        align-items:center;
+        justify-content: center;
+        height: 200px;
+        font-size:90px;
+        background-color: greenyellow;
+        font-family: 'Helvetica';
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        margin-bottom: 0;
+    }
+
+    main{
+        top: 0;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 2;
+        grid-row-end:2;  
+    }
+
+    .poodle {
+        margin-right:100px;
+        grid-column-start:1;
+        grid-column-end: 3;
+        grid-row-start:3;
+        grid-row-end:4;
+    }
+
+
+    sidebar {
+        grid-column-start:3;
+        grid-column-end: 5;
+        grid-row-start: 3;
+        grid-row-end:3;
+    }
+
+    .fourth {
+        grid-column-start:3;
+        grid-column-end: 5;
+        grid-row-start:4;
+        grid-row-end:4;
+        margin-right:10px;
+    }
+
+
+    .fifth {
+        z-index:-1;
+        grid-column-start:1;
+        grid-column-end: 3;
+        grid-row-start: 4;
+        grid-row-end:6;
+
+    }
+    .sixth {
+        grid-column-start:2;
+        grid-column-end: 5;
+        grid-row-start:5;
+        grid-row-end:5;
+    }
+
+
+    .seventh {
+        margin-bottom:70px;
+        grid-column-start:1;
+        grid-column-end: 3;
+        grid-row-start: 6;
+        grid-row-end:6;
+    }
+
+    .eigth {
+
+        grid-column-start:3;
+        grid-column-end: 5;
+        grid-row-start:6;
+        grid-row-end:7
+    }
+
+    .ninth {
+        z-index:-1;
+        grid-column-start:1;
+        grid-column-end:5;
+        grid-row-start:6;
+        grid-row-end:9;
+    }
+
+    footer {
+        grid-column-start:1;
+        grid-column-end:5;
+        grid-row-start:9;
+        grid-row-end:9;
+        margin-bottom: 0;
+        font-family: 'Helvetica';
+        font-size:20px;
+        text-align: center;
+        background: radial-gradient(circle, rgba(0,0,0,1) 13%, rgba(42,182,255,1) 26%, rgba(42,125,255,1) 37%, rgba(255,255,255,1) 51%, rgba(255,255,255,1) 70%, rgba(0,98,194,1) 94%);
+        text-decoration: underline;
+        color:white;
+        padding:20px;
+    }
+     }
+
+    
